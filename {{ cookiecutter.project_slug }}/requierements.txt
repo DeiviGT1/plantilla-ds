@@ -1,21 +1,23 @@
 ipykernel
 ipython
 {% if cookiecutter.project_packages == "All" -%}
+fs
 jupyter
 jupyterlab
-{% endif -%}
+pathlib
+keras
+pytorch
+pandas-flavor
+pandas-profiling
+{% endif %}
 numpy
 pandas
 scipy
 matplotlib
 seaborn
 scikit-learn
+pyproj
+python=={{ cookiecutter.python_version }}
 {% if cookiecutter.project_packages == "All" -%}
-keras
-pytorch
-tensorflow
-pandas-flavor
-pandas-profiling
+pyhere
 {% endif -%}
-plotly
-pyprojroot
