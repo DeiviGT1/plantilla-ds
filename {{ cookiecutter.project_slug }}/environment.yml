@@ -1,19 +1,34 @@
+
+
 name: {{ cookiecutter.project_slug }} 
 channels:
   - anaconda
   - defaults 
 dependencies:
+  - ipykernel
+  - ipython
   {% if cookiecutter.project_packages == "All" -%}
   - fs
   - jupyter
   - jupyterlab
   - pathlib 
+  - keras
+  - pytorch
+  - tensorflow
+  - pandas-flavor
+  - pandas-profiling
   {% endif %}
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
   - pip
   {% if cookiecutter.project_packages == "All" -%}
   - pyproj root 
   {% endif %}
-  - python= {{ cookiecutter.python_version }}
+  - python = {{ cookiecutter.python_version }}
   - pip:
     {% if cookiecutter.project_packages == "All" -%}
     - pyhere

@@ -4,9 +4,6 @@ ipython
 jupyter
 jupyterlab
 {% endif -%}
-{% if cookiecutter.project_packages == "All" -%}
-missingno
-{% endif -%}
 numpy
 pandas
 scipy

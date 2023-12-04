@@ -26,37 +26,27 @@ conda install -c conda-forge cookiecutter
 
 ## Directories Distribution
 ```
-
 ├── README.md
 ├── cookiecutter.json
 ├── environment.yaml
 ├── hooks
-│   └── post_gen_project.py
+│   └── pos_gen_project.py
+│   └── pre_gen_project.py
 └── {{ cookiecutter.project_slug }}
     ├── LICENCE
     ├── README.md
     ├── data
-    │   ├── 0_external
-    │   ├── 0_raw
-    │   ├── 1_intermediate
-    │   └── 2_processed
-    ├── docs
-    ├── environment.yaml
+    │   └── .gitkeep
     ├── notebooks
     │   └── 0.0-{{ cookiecutter.project_slug }}-introduction.ipynb
-    ├── reports
     ├── requirements.txt
-    ├── scripts
-    ├── setup.py
-    └── {{ cookiecutter.project_slug }}_packages
-        ├── __init__.py
-        ├── utils
-        │   ├── __init__.py
-        │   └── get_path.py
-        └── visualization
-            ├── __init__.py
-            └── visualization.py
+    └── scripts
+        └── .gitkeep
 ```
 
 ## Usage
 In the directory that you create for the project, execute in terminal:
+
+```
+cookiecutter https://github.com/DeiviGT1/plantilla-ds.git
+```

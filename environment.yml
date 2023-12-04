@@ -1,0 +1,8 @@
+# virtualenv venv && source ./venv/bin/activate
+name: cookiecutter-personal-platzi
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - cookiecutter
