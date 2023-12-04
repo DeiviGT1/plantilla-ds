@@ -1,4 +1,5 @@
-name: {{ cookiecutter.project_slug }} channels:
+name: {{ cookiecutter.project_slug }} 
+channels:
   - anaconda
   - defaults 
 dependencies:
