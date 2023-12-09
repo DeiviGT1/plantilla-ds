@@ -1,3 +1,8 @@
+```
+pip install -r requirements.txt
+```
+
+
 # cookiecuter - Data Analysis project 
 
 This is a Cookiecutter template for creating a data analysis project 
